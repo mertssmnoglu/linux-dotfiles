@@ -1,0 +1,47 @@
+window:
+  padding:
+    x: 10
+    y: 10
+  class:
+    instance: Alacritty
+    general: Alacritty
+  opacity: 0.78
+
+scrolling:
+  history: 10000
+  multiplier: 3
+
+selection:
+  save_to_clipboard: false
+
+shell:
+  program: /usr/bin/bash
+
+colors:
+  primary:
+    background: '#1e222a'
+    foreground: '#e5e1d8'
+
+  normal:
+    black: '#000000'
+    red: '#f7786d'
+    green: '#bde97c'
+    yellow: '#efdfac'
+    blue: '#6ebaf8'
+    magenta: '#ef88ff'
+    cyan: '#90fdf8'
+    white: '#e5e1d8'
+
+  bright:
+    black: '#b4b4b4'
+    red: '#f99f92'
+    green: '#e3f7a1'
+    yellow: '#f2e9bf'
+    blue: '#b3d2ff'
+    magenta: '#e5bdff'
+    cyan: '#c2fefa'
+    white: '#ffffff'
+
+theme: Wombat
+white: "#DDDDDD"
+theme: X-dotshare
