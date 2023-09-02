@@ -16,7 +16,7 @@ copy_files() {
     echo "Do you want to start the copying process [y/n]"
     read prompt
     if [ $prompt == "y" ]; then
-        cp -r config/* $config_dir
+        sudo cp -r config/* $config_dir
         echo "Successfully"
         exit 0
     else 
