@@ -2,7 +2,7 @@
 
 Dotfiles, configuration for my Linux Setup
 
-## Install & Setup
+## Install & Run
 
 ```shell
 git clone https://github.com/mertssmnoglu/linux-dotfiles.git
@@ -13,13 +13,15 @@ cd linux-dotfiles
 ```
 
 ```shell
-chmod +x ./setup.sh
+chmod +x ./install.sh
 ```
 
 ```shell
-sh ./setup.sh
+./install.sh
 ```
 
 ## Resources
 
-alacritty config inspired by [@eterna8](https://github.com/eterna8)
+1. Alacritty Configuration
+2. Hyprland Configuration
+3. Waybar Configuration
