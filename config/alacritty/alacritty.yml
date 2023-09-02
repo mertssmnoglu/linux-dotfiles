@@ -5,21 +5,21 @@ window:
   class:
     instance: Alacritty
     general: Alacritty
-  opacity: 0.78
+  opacity: 0.40
 
 scrolling:
   history: 10000
   multiplier: 3
 
 selection:
-  save_to_clipboard: false
+  save_to_clipboard: true
 
 shell:
   program: /usr/bin/fish
 
 colors:
   primary:
-    background: '#1e222a'
+    background: '#0E21A0'
     foreground: '#e5e1d8'
 
   normal:
@@ -41,7 +41,3 @@ colors:
     magenta: '#e5bdff'
     cyan: '#c2fefa'
     white: '#ffffff'
-
-theme: Wombat
-white: "#DDDDDD"
-theme: X-dotshare
