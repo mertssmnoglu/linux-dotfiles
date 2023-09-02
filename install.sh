@@ -1,10 +1,33 @@
 #!/usr/bin/bash
 
-echo -e "These customizations are made for me(mertssmnoglu). If there is something you don't like, you can change it locally.\n"
-echo -e "Applying customizations for user $USER"
-sleep 2
+config_dir="$HOME/.config"
+appname_bold="$(tput bold)@mertssmnoglu's Linux dotfiles installer$(tput sgr0)"
+welcome_text="Welcome to $appname_bold"
 
-cd config
-cp -r alacritty /home/$USER/.config
-echo "Successful"
-exit 0
+readme(){
+    echo $welcome_text
+    echo -e "This script is written to copy the config files to '$config_dir'\n"
+    echo -e "\e[1;31m!! WARNING !!\e[0m"
+    echo "Copying process cannot be undone! Be sure to backup your config files before starting the process."
+    echo ""
+}
+
+copy_files() {
+    echo "Do you want to start the copying process [y/n]"
+    read prompt
+    if [ $prompt == "y" ]; then
+        cp -r config/* $config_dir
+        echo "Successfully"
+        exit 0
+    else 
+        echo "Process aborted"
+        exit 1
+    fi
+}
+
+main(){
+    readme
+    copy_files
+}
+
+main
