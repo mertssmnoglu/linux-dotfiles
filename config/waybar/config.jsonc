@@ -1,11 +1,22 @@
 {
-    // "layer": "top", // Waybar at top layer
-    // "position": "bottom", // Waybar position (top|bottom|left|right)
+    // GLOBAL CONFIG
+
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar position (top|bottom|left|right)
     "height": 30,
     "spacing": 6, // Gaps between modules
-    "modules-left": ["tray"],
-    "modules-center": ["cpu", "memory", "temperature"],
-    "modules-right": ["idle_inhibitor", "pulseaudio", "network", "battery", "battery#bat2", "clock"],
+    "modules-left": ["hyprland/workspaces", "tray"],
+    "modules-center": ["clock", "custom/screenshot"],
+    "modules-right": ["pulseaudio", "network", "battery", "battery#bat2"],
+
+    // MODULES
+
+    "custom/screenshot": {
+	"format":"",
+	"on-click": "grim"
+    // "on-click-right":"~/.config/hypr/scripts/screenshot_area"
+    },
+
     "idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
@@ -13,22 +24,27 @@
             "deactivated": ""
         }
     },
+
     "tray": {
         "icon-size": 21,
         "spacing": 12
     },
+
     "clock": {
         "timezone": "Europe/Istanbul",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%d-%m}"
     },
+
     "cpu": {
         "format": "{usage}% ",
         "tooltip": false
     },
+
     "memory": {
         "format": "{}% "
     },
+
     "temperature": {
         // "thermal-zone": 2,
         // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
@@ -37,11 +53,13 @@
         "format": "{temperatureC}°C {icon}",
         "format-icons": ["", "", ""]
     },
+
     "backlight": {
         // "device": "acpi_video1",
         "format": "{percent}% {icon}",
         "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
+
     "battery": {
         "states": {
             "good": 100,
@@ -56,17 +74,21 @@
         // "format-full": "",
         "format-icons": ["", "", "", "", ""]
     },
+
     "battery#bat2": {
         "bat": "BAT2"
     },
+
     "network": {
         "format-wifi": "{essid} ({signalStrength}%) ",
         "format-ethernet": "{ipaddr}/{cidr} ",
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+        "format-alt": "{ifname}: {ipaddr}/{cidr}",
+	"on-click-right": "iwgtk"
     },
+    
     "pulseaudio": {
         "format": "{volume}% {icon} {format_source}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
@@ -74,6 +96,7 @@
         "format-muted": " {format_source}",
         "format-source": "{volume}% ",
         "format-source-muted": "",
+	"format-alt": "Ses",
         "format-icons": {
             "headphone": "",
             "hands-free": "",
@@ -83,6 +106,6 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "pavucontrol"
+        "on-click-right": "pavucontrol"
     }
 }
