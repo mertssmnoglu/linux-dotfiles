@@ -1,2 +1,7 @@
 //@theme "/usr/share/rofi/themes/purple.rasi" My Fav Theme
 @theme "/usr/share/rofi/themes/purple.rasi"
+
+configuration {
+ modi: "window,drun,ssh,combi";
+ combi-modi: "window,drun,ssh";
+}
