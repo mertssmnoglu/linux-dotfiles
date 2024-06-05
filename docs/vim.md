@@ -12,12 +12,13 @@ By default, vim uses `$USER/.vimrc`
 ## Configuration Steps
 
 1. Copy the `.vimrc` into your home directory
-2. Open vim into your terminal. eg: `vim .`
-3. Use `:PlugInstall` command
-4. (Optional) Close and re open vim
+2. Install `vim-plug` from [here](https://github.com/junegunn/vim-plug#installation)
+3. Open vim into your terminal. (`vim .`)
+4. Use `:PlugInstall` command
+5. Close and re-open vim
 
 ## References
 
 - https://stackoverflow.com/a/66154403
-- https://github.com/junegunn/vim-plug#installation
-- https://github.com/junegunn/vim-plug#usage
+  - https://github.com/junegunn/vim-plug#installation
+  - https://github.com/junegunn/vim-plug#usage
