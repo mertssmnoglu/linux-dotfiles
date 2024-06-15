@@ -6,7 +6,7 @@ set termguicolors
 set expandtab
 set number
 set cursorline
-set shiftwidth=2
+set shiftwidth=4
 set tabstop=4
 set expandtab
 set nobackup
