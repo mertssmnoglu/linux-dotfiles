@@ -33,5 +33,6 @@ set --export DENO_INSTALL "$HOME/.deno"
 set --export PATH $DENO_INSTALL/bin $PATH
 
 # go
+fish_add_path /usr/local/go/bin
 set -x GOPATH $HOME/go
 set PATH $GOPATH/bin $PATH
