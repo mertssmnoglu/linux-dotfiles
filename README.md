@@ -25,3 +25,10 @@ chmod +x ./install.sh
 1. Alacritty Configuration
 2. Hyprland Configuration
 3. Waybar Configuration
+4. Vim Configuration
+5. Rofi Configuration
+6. Firefox | "Tree Style Tab" Configuration
+7. Btop Configuration
+8. Fish Configuration
+9. Htop configuration
+
