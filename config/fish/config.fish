@@ -3,6 +3,10 @@ if status is-interactive
     sh /usr/share/nvm/init-nvm.sh
 end
 
+# git aliases
+
+abbr --add gp "git push origin"
+
 # kubectl aliases
 test -f ~/.kubectl_aliases.fish && source ~/.kubectl_aliases.fish
 
