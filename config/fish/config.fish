@@ -6,6 +6,8 @@ end
 # git aliases
 
 abbr --add gp "git push origin"
+abbr --add gpf "git push origin --force"
+abbr --add gf "git fetch origin"
 
 # kubectl aliases
 test -f ~/.kubectl_aliases.fish && source ~/.kubectl_aliases.fish
