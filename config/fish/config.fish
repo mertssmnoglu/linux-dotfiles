@@ -19,6 +19,8 @@ set --export PATH $LD_LIBRARY_PATH $PATH
 fish_add_path /usr/local/bin/Discord
 fish_add_path /usr/local/bin/gama-files/
 
+fish_add_path /usr/local/zed/zed-editor
+
 # python
 fish_add_path /usr/local/bin/pip3
 
@@ -43,3 +45,10 @@ set --export PATH $DENO_INSTALL/bin $PATH
 fish_add_path /usr/local/go/bin
 set -x GOPATH $HOME/go
 set PATH $GOPATH/bin $PATH
+
+# dotnet
+
+set --export DOTNET_CLI_TELEMETRY_OPTOUT 1 # microsoft things
+set --export DOTNET_ROOT $HOME/.dotnet
+set PATH $DOTNET_ROOT $PATH
+
