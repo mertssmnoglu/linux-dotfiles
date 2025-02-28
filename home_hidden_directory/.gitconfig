@@ -1,0 +1,22 @@
+[user]
+	name = Mert Şişmanoğlu
+	email = mert190737fb@gmail.com
+	signingkey = DE20FFCF203C9573 
+    #signinkey = 16D1344CCDD23EB6
+[url "ssh://git@github.com/"]
+  insteadOf = https://github.com/
+[url "ssh://git@gitlab.com/"]
+  insteadOf = https://gitlab.com/
+[url "ssh://git@bitbucket.org/"]
+  insteadOf = https://bitbucket.org/
+[gpg]
+	program = gpg
+[core]
+	editor = vim
+[init]
+	defaultBranch = main
+[commit]
+    gpgsign = true
+
+[push]
+    autoSetupRemote = true
