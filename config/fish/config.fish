@@ -7,6 +7,7 @@ end
 
 abbr --add gp "git push origin"
 abbr --add gpf "git push origin --force"
+abbr --add gpfl "git push origin --force-with-lease"
 abbr --add gf "git fetch origin"
 abbr --add gfp "git fetch origin && git pull origin"
 
@@ -18,24 +19,17 @@ set --export LD_LIBRARY_PATH "/usr/local/lib"
 set --export PATH $LD_LIBRARY_PATH $PATH
 fish_add_path /usr/local/bin/Discord
 fish_add_path /usr/local/bin/gama-files/
-
+fish_add_path ~/.local/bin
 fish_add_path /usr/local/zed/zed-editor
 
 # python
 fish_add_path /usr/local/bin/pip3
-
-# php
-fish_add_path /opt/lampp
 
 # dotnet
 fish_add_path ~/.dotnet/tools
 
 # cargo
 fish_add_path ~/.cargo/bin
-
-# bun
-set --export BUN_INSTALL "$HOME/.bun"
-set --export PATH $BUN_INSTALL/bin $PATH
 
 # deno
 set --export DENO_INSTALL "$HOME/.deno"
