@@ -20,6 +20,12 @@ chmod +x ./install.sh
 ./install.sh
 ```
 
+### Vim
+
+Don't forget to install [vim-plug](https://github.com/junegunn/vim-plug?tab=readme-ov-file#installation)
+
+When it's installed and vimrc file copied to `~/` vim automatically attempts to `:PlugInstall` command and installs all of the plugins.
+
 ## Resources
 
 1. Alacritty Configuration
