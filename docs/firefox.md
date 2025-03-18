@@ -1,20 +1,22 @@
 # Firefox
 
-I'm using **Tree Style Tab** extension with some custom css.
+I'm using **Sideberry** extension with some custom css.
 
-- Extension: [Tree Style Tab]()
+- Extension: [Sideberry]()
 - Custom CSS: [here](../firefox/chrome/userChrome.css)
 
-## What is the custom css location?
+## How to apply custom CSS?
 
-1. Go to `about:profiles`
+1. Go to `about:config`
 2. Accept the dialog if got any
-3. Select the table which got `Default Profile: yes`
-4. Open up the root directory of the selected table
-5. Copy the Custom css into `chrome/userChrome.css`
-
+3. Set `toolkit.legacyUserProfileCustomizations.stylesheets` to true
+4. Go to `about:profiles`
+5. Select the table which got `Default Profile: yes`
+6. Open up the root directory of the selected table
+7. Create `chrome` directory under this location
+8. Copy the custom css into `chrome/userChrome.css`
+9. Restart firefox
 
 ## Conclusion
 
 Now, you can only seeing the tree style tabs not the default tabs at the same time.
-
