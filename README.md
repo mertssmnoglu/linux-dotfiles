@@ -1,40 +1,7 @@
-# My Linux Dotfiles
+# Linux Dotfiles (for Desktop and Raspberry Pi Setups)
 
-Dotfiles, configuration for my Linux Setup
+This repository contains Ansible playbooks and configuration files for setting up and managing Linux dotfiles on both desktop and Raspberry Pi environments. The playbooks automate the installation of necessary packages, configuration of system settings, and deployment of dotfiles to ensure a consistent and efficient setup across different machines.
 
-## Install & Run
+## License
 
-```shell
-git clone https://github.com/mertssmnoglu/linux-dotfiles.git
-```
-
-```shell
-cd linux-dotfiles
-```
-
-```shell
-chmod +x ./install.sh
-```
-
-```shell
-./install.sh
-```
-
-### Vim
-
-Don't forget to install [vim-plug](https://github.com/junegunn/vim-plug?tab=readme-ov-file#installation)
-
-When it's installed and vimrc file copied to `~/` vim automatically attempts to `:PlugInstall` command and installs all of the plugins.
-
-## Resources
-
-1. Alacritty Configuration
-2. Hyprland Configuration
-3. Waybar Configuration
-4. Vim Configuration
-5. Rofi Configuration
-6. Firefox | "Tree Style Tab" Configuration
-7. Btop Configuration
-8. Fish Configuration
-9. Htop configuration
-
+This project is licensed under the GNU General Public License v3.0. See the [LICENSE](LICENSE) file for details.
